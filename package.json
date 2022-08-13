@@ -19,7 +19,7 @@
 		"commands": [
 			{
 				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"title": "toTs"
 			}
 		]
 	},
