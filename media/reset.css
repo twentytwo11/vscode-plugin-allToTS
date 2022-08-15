@@ -1,0 +1,24 @@
+.textarea-wrapper{
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.json-source{
+    padding:10px;
+    width:45%;
+    height:90vh;
+    resize:none;
+}
+.ts-result{
+    padding:10px;
+    margin: 0;
+    width:45%;
+    height:90vh;
+    resize:none;
+    background-color: var(--vscode-editor-background);
+}
+
+.action-item{
+    width: 100px;
+    margin-left: 20px;
+}
