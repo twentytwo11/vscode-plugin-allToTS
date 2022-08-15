@@ -12,7 +12,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.helloWorld",
+		"onCommand:allToTs.trans2TS"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -20,6 +21,10 @@
 			{
 				"command": "extension.helloWorld",
 				"title": "toTs"
+			},
+			{
+				"command": "allToTs.trans2TS",
+				"title": "trans2TS"
 			}
 		]
 	},
@@ -30,11 +35,16 @@
 		"watch": "tsc -watch -p ./"
 	},
 	"devDependencies": {
+		"@types/fs-extra": "^9.0.13",
 		"@types/node": "^16.11.7",
-		"@types/vscode": "^1.34.0",
+		"@types/vscode": "^1.47.0",
+		"@types/vscode-webview": "^1.57.0",
 		"@typescript-eslint/eslint-plugin": "^5.30.0",
 		"@typescript-eslint/parser": "^5.30.0",
 		"eslint": "^8.13.0",
 		"typescript": "^4.7.2"
+	},
+	"dependencies": {
+		"fs-extra": "^10.1.0"
 	}
 }
